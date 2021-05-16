@@ -37,3 +37,9 @@ if err != nil{
     panic(err)
 }
 ```
+
+## Testing
+To run tests, open the file ```run_tests.sh``` and set your variables, after that run:
+```bash
+sh ./run_tests.sh
+```
