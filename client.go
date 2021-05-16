@@ -22,7 +22,7 @@ func NewClient(config *Configuration) YigimClient {
 
 // Execute the request
 func (client *yigimClient) executeRequest(req *http.Request) ([]byte, error) {
-	httpClient := http.Client{}
+	httpClient := http.DefaultClient
 	response, err := httpClient.Do(req)
 	if err != nil {
 		return nil, errors.Wrap(err, "Cannot execute the request")
